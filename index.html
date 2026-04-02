@@ -1,151 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pius Victor | Data Scientist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pius Victor | Data Scientist</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <!-- ── HEADER ── -->
-  <header>
+<!-- NAVIGATION -->
+<header class="fade-in">
     <nav>
-      <h2>Pius Victor</h2>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <h2>Pius Victor</h2>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <!-- ── HERO ── -->
-  <section class="hero">
-    <p class="hero-eyebrow">// Data Scientist &amp; Analyst</p>
-    <h1>Hi, I'm <em>Pius</em> 👋</h1>
+<!-- HERO SECTION -->
+<section class="hero fade-in">
+    <h1>Hi, I’m Pius 👋</h1>
     <p>
-      I build data science projects that solve real problems, ranging from
-      from fraud detection to customer behavior analysis.
+        I’m a data scientist in the making, building real-world machine learning projects
+        around fraud detection, customer behavior, and predictive analytics.
     </p>
+
     <div class="buttons">
-      <a href="#projects" class="btn">View Work</a>
-      <a href="#contact" class="btn-outline">Contact</a>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
     </div>
-  </section>
+</section>
 
-  <!-- ── FEATURED ── -->
-  <section class="featured fade-in">
-    <h2>// Featured Project</h2>
+<!-- PROJECTS -->
+<section id="projects" class="section">
 
-    <div class="featured-card">
-      <h3>FraudShield: Credit Card Fraud Detection</h3>
-      <p>
-        Built an end-to-end machine learning system to detect fraudulent
-        transactions across 284,807 records — deployed as an interactive
-        Streamlit app with SHAP explainability and batch scoring.
-      </p>
-      <div class="stat-row">
-        <div class="stat-item">
-          <span class="stat-val">0.9725</span>
-          <span class="stat-label">ROC-AUC</span>
+<h2 class="fade-in">Projects</h2>
+
+<div class="grid">
+
+    <!-- FEATURED PROJECT -->
+    <div class="project-card featured-project fade-in">
+        <span class="badge">⭐ Featured Case Study</span>
+
+        <h3>FraudShield: Credit Card Fraud Detection</h3>
+
+        <p class="role">Machine Learning Project</p>
+
+        <p><strong>Problem:</strong> Fraudulent transactions are rare but costly, making detection difficult.</p>
+
+        <p><strong>What I did:</strong> Built a classification model to detect fraud patterns in transaction data.</p>
+
+        <p><strong>Tools:</strong> Python, Pandas, Scikit-learn, Streamlit</p>
+
+        <p><strong>Result:</strong> Deployed an interactive app that predicts fraudulent transactions in real time.</p>
+
+        <div class="links">
+            <a href="https://github.com/profpius/credit-card-fraud-detection" target="_blank">GitHub</a>
+            <a href="https://credit-card-fraud-detection-mxpbol3zjbrgzjamc3gj4q.streamlit.app/" target="_blank">Live App</a>
         </div>
-        <div class="stat-item">
-          <span class="stat-val">XGBoost</span>
-          <span class="stat-label">Model</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-val">Live</span>
-          <span class="stat-label">Status</span>
-        </div>
-      </div>
-      <a href="https://github.com/profpius/credit-card-fraud-detection" target="_blank">GitHub</a>
-      <a href="https://credit-card-fraud-detection-mxpbol3zjbrgzjamc3gj4q.streamlit.app/" target="_blank">Live App ↗</a>
     </div>
-  </section>
 
-  <!-- ── PROJECTS ── -->
-  <section id="projects" class="section">
-
-    <h2 class="fade-in">What I've Built</h2>
-
-    <div class="grid">
-
-      <div class="project-card fade-in">
-        <p class="project-num">01</p>
+    <!-- PROJECT 2 -->
+    <div class="project-card fade-in">
         <h3>Customer Churn Prediction</h3>
-        <p>Predicting which customers are likely to leave using an XGBoost pipeline with SHAP explainability and retention recommendations.</p>
-        <div class="tag-row">
-          <span class="tag">XGBoost</span>
-          <span class="tag">SHAP</span>
-          <span class="tag">Streamlit</span>
-        </div>
-        <a href="https://github.com/profpius/customer-churn-prediction" target="_blank">GitHub ↗</a>
-        <a href="https://customer-churn-prediction-pius.streamlit.app/" target="_blank" style="margin-left:1rem;">Live App ↗</a>
-      </div>
-
-      <div class="project-card fade-in">
-        <p class="project-num">02</p>
-        <h3>Customer Segmentation</h3>
-        <p>Grouping customers using RFM feature engineering and K-Means clustering on the Online Retail II dataset.</p>
-        <div class="tag-row">
-          <span class="tag">K-Means</span>
-          <span class="tag">RFM</span>
-          <span class="tag">pandas</span>
-        </div>
-        <a href="https://github.com/profpius/customer-segmentation" target="_blank">GitHub ↗</a>
-        <a href="https://customer-segmentation-pius.streamlit.app/" target="_blank" style="margin-left:1rem;">Live App ↗</a>
-      </div>
-
-      <div class="project-card fade-in">
-        <p class="project-num">03</p>
-        <h3>Customer Churn Analysis</h3>
-        <p>Exploratory analysis of ~37,000 customer records — uncovering churn patterns across membership tiers, complaints, and age groups.</p>
-        <div class="tag-row">
-          <span class="tag">EDA</span>
-          <span class="tag">seaborn</span>
-          <span class="tag">matplotlib</span>
-        </div>
-        <a href="https://github.com/profpius/customer-churn-analysis" target="_blank">GitHub ↗</a>
-      </div>
-
+        <p>Built a model to predict customers likely to leave a service.</p>
+        <a href="https://github.com/profpius/customer-churn-prediction" target="_blank">GitHub</a>
+        <a href="https://customer-churn-prediction-pius.streamlit.app/" target="_blank">Live App</a>
     </div>
-  </section>
 
-  <!-- ── ABOUT ── -->
-  <section id="about" class="section fade-in">
+    <!-- PROJECT 3 -->
+    <div class="project-card fade-in">
+        <h3>Customer Segmentation</h3>
+        <p>Used RFM analysis + KMeans clustering to group customers by behavior.</p>
+        <a href="https://github.com/profpius/customer-segmentation" target="_blank">GitHub</a>
+        <a href="https://customer-segmentation-pius.streamlit.app/" target="_blank">Live App</a>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card fade-in">
+        <h3>Customer Churn Analysis</h3>
+        <p>Exploratory data analysis to understand why customers leave.</p>
+        <a href="https://github.com/profpius/customer-churn-analysis" target="_blank">GitHub</a>
+    </div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade-in">
     <h2>About Me</h2>
-    <p>
-      I'm a Data Scientist and Analyst with a B.Eng in Production Engineering,
-      building a portfolio of end-to-end machine learning projects deployed to production.
-    </p>
-    <p>
-      I enjoy solving problems with data by turning messy datasets into useful insights
-      and actionable models. Every project I build goes from raw data all the way to a
-      live, usable application.
-    </p>
-    <p>
-      Incoming MSc Data Science &amp; AI student at the University of Suffolk (September 2026).
-    </p>
-  </section>
 
-  <!-- ── CONTACT ── -->
-  <section id="contact" class="section fade-in">
+    <p>
+        I didn’t start as a data scientist — I learned by building projects and breaking things until I understood them.
+    </p>
+
+    <p>
+        I enjoy turning messy data into meaningful insights and building machine learning models that solve real problems.
+        Right now, I’m focused on improving my skills through hands-on projects in classification, clustering, and data analysis.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:profpius01@gmail.com">profpius01@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/profpius" target="_blank">github.com/profpius</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/victor-pius-4061a9332" target="_blank">victor-pius-4061a9332</a></p>
-  </section>
 
-  <!-- ── FOOTER ── -->
-  <footer>
-    <p>© 2026 Pius Victor. All rights reserved.</p>
-  </footer>
+    <p>Email: profpius01@gmail.com</p>
+    <p>GitHub: https://github.com/profpius</p>
+    <p>LinkedIn: https://www.linkedin.com/in/victor-pius-4061a9332</p>
+</section>
 
-  <script src="script.js"></script>
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Pius Victor</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
